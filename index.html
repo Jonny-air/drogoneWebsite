@@ -3,59 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #fff;
-        }
-
-        .container {
-            text-align: center;
-            padding: 3rem;
-        }
-
-        h1 {
-            font-size: 4rem;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-            margin-bottom: 1rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeUp 0.8s ease forwards;
-        }
-
-        p {
-            font-size: 1.25rem;
-            color: #a0a0c0;
-            opacity: 0;
-            animation: fadeUp 0.8s ease 0.3s forwards;
-        }
-
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>DroGone — Autonomous Counter Drone Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, World!</h1>
-        <p id="subtitle">Welcome to my website.</p>
-    </div>
-    <script src="app.js"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="assets/logos/drogone-logo-white.png" alt="DroGone">
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="#product">Product</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#partner">Partner</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#focus-project">Focus Project</a></li>
+            <li><a href="#ethics">Ethics</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="assets/images/hero-banner.jpg" alt="" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Autonomous Counter<br>Drone Systems</h1>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product" id="product">
+        <div class="section-title fade-in">Product</div>
+        <div class="product-cards">
+            <div class="product-card fade-in">
+                <img src="assets/images/catching-render.png" alt="Non Destructive Catches" class="product-card-img">
+                <div class="product-card-body">
+                    <h3>Non Destructive Catches</h3>
+                    <p class="card-subtitle">No more drones falling out of the sky.</p>
+                    <p>The DroGone catching mechanism prevents harm to anyone on the ground by securing the target, while causing minimal or no damage to it.</p>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="assets/images/autonomous-drone.jpg" alt="Fully Autonomous" class="product-card-img">
+                <div class="product-card-body">
+                    <h3>Fully Autonomous</h3>
+                    <p class="card-subtitle">Take a break.</p>
+                    <p>Once DroGone knows an estimated position of the target drone, it can autonomously catch it and return to its base station with the target in-net.</p>
+                </div>
+            </div>
+            <div class="product-card fade-in">
+                <img src="assets/images/gui-tablet-mockup.png" alt="Readily Supervised" class="product-card-img">
+                <div class="product-card-body">
+                    <h3>Readily Supervised</h3>
+                    <p class="card-subtitle">The human is always first in command.</p>
+                    <p>To enable supervision of the system, a user interface (UI) provides a live video stream from the catch and extensive information to the supervisor. Via the UI the catching process can be approved, or aborted at any time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="developed-at fade-in">
+            <h4>Developed At</h4>
+            <div class="developed-at-logos">
+                <img src="assets/partners/eth-zurich.png" alt="ETH Zurich">
+                <img src="assets/partners/eth-asl.png" alt="ETH ASL">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team" id="team">
+        <h2 class="section-title fade-in">The Team</h2>
+        <div class="team-grid">
+            <div class="team-card fade-in">
+                <img src="assets/team/nasib-naimi.jpg" alt="Nasib Naimi">
+                <h4>Nasib Naimi</h4>
+                <a href="https://www.linkedin.com/in/nasibnaimi/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <div class="team-card fade-in">
+                <img src="assets/team/luca-straessle.jpg" alt="Luca Strässle">
+                <h4>Luca Strässle</h4>
+                <a href="https://www.linkedin.com/in/luca-str%C3%A4ssle-9926a5184/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <div class="team-card fade-in">
+                <img src="assets/team/jonathan-becker.png" alt="Jonathan Becker">
+                <h4>Jonathan Becker</h4>
+                <a href="https://www.linkedin.com/in/jonathan-becker-b768b1193/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <div class="team-card fade-in">
+                <img src="assets/team/maurice-brunner.png" alt="Maurice Brunner">
+                <h4>Maurice Brunner</h4>
+                <a href="https://www.linkedin.com/in/felix-stadler-99970a1a6/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <div class="team-card fade-in">
+                <img src="assets/team/julius-fricke.png" alt="Julius Fricke">
+                <h4>Julius Fricke</h4>
+                <a href="https://www.linkedin.com/in/felix-stadler-99970a1a6/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners" id="partner">
+        <h2 class="section-title fade-in">In Collaboration With</h2>
+        <div class="partners-grid fade-in">
+            <a href="https://www.aurora-aero.ch/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/partners/aurora.png" alt="Aurora Aero">
+            </a>
+            <a href="https://www.ar.admin.ch/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/partners/armasuisse.png" alt="Armasuisse">
+            </a>
+            <a href="https://www.wysszurich.uzh.ch/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/partners/wyss-zurich.png" alt="Wyss Zurich">
+            </a>
+            <a href="https://lightly.ai" target="_blank" rel="noopener noreferrer">
+                <img src="assets/partners/lightly.png" alt="Lightly">
+            </a>
+            <a href="https://radiate.ch" target="_blank" rel="noopener noreferrer">
+                <img src="assets/partners/radiate.png" alt="Radiate">
+            </a>
+            <a href="https://www.zh.ch/de/sicherheitsdirektion/kantonspolizei-zuerich.html" target="_blank" rel="noopener noreferrer">
+                <img src="assets/partners/kantonspolizei-zurich.png" alt="Kantonspolizei Zürich">
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title fade-in">Stay Updated</h2>
+        <div class="fade-in">
+            <p class="contact-subtitle">Request a Demo</p>
+            <p class="contact-text">Or get in touch to discuss ideas, questions or what type of coffee is the best.</p>
+            <a href="mailto:info@drogone.com" class="btn-demo">Request A Demo</a>
+        </div>
+    </section>
+
+    <!-- Focus Project -->
+    <section class="focus-project" id="focus-project">
+        <h2 class="section-title fade-in">The Focus-Project</h2>
+        <div class="focus-project-content fade-in">
+            <p>DroGone began as a focus-project at ETH Zürich, with the vision of developing a non-destructive anti-drone system, capable of intercepting illicit drones and securely retrieving them. This would allow DroGone to engage with drones in public settings, e.g. over open-air festivals, large-scale sporting events and the like, without risking injury of citizens by falling objects.</p>
+            <h3>Final Focus-Project Trailer</h3>
+            <div class="video-placeholder">
+                <a href="https://www.youtube.com/channel/UChOKvaOu-O4QjJgFf3XLHcA" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/focus-project-thumbnail.jpg" alt="Focus Project Trailer">
+                    <div class="play-btn">
+                        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethics -->
+    <section class="ethics" id="ethics">
+        <h2 class="section-title fade-in">Ethics</h2>
+        <div class="ethics-content fade-in">
+            <p>DroGone wants to promote a safer world, therefore we value the following principles:</p>
+            <ul class="ethics-list">
+                <li>Our technology does in no way enable nor is it involved in harming people.</li>
+                <li>Our technology cannot be used for applications other than what it was designed for.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 DroGone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
